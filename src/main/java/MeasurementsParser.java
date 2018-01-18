@@ -43,6 +43,6 @@ public class MeasurementsParser {
 
     public static void main(String[] args) {
         MeasurementsParser measurementsParser = new MeasurementsParser();
-        System.out.println(measurementsParser.parseFile("src/output.txt"));
+        System.out.println(measurementsParser.parseFile("src/main/java/output.txt"));
     }
 }
