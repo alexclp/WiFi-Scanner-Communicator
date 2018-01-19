@@ -5,11 +5,13 @@ import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.ContentType;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.HttpClientBuilder;
+import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.HashMap;
 
 import static org.apache.http.protocol.HTTP.USER_AGENT;
 
@@ -29,9 +31,16 @@ public class HTTPClient {
         return instance;
     }
 
-    public void GET(String urlString) throws IOException {
-        String url = "http://www.google.com/search?q=httpClient";
+    public JSONObject GET(String urlString, HashMap<String, Object> parameters) throws IOException {
+        String url = urlString;
+        if (parameters != null) {
+            url += "?";
+            for (String key : parameters.keySet()) {
+                url += key + "=" + parameters.get(key) + "&";
+            }
+        }
 
+        System.out.println(url);
         HttpGet request = new HttpGet(url);
 
         request.addHeader("User-Agent", USER_AGENT);
@@ -48,17 +57,15 @@ public class HTTPClient {
         while ((line = rd.readLine()) != null) {
             result.append(line);
         }
+
+        JSONObject responseObject = new JSONObject(result.toString());
+
+        return responseObject;
     }
 
-    public void POST(String urlString, Measurement measurement) throws IOException {
-        String jsonString = new JSONObject()
-                .put("ssid", measurement.getSsid())
-                .put("macAddress", measurement.getMacAddress())
-                .put("signalStrength", String.format("%d", measurement.getSignalStrength()))
-                .toString();
-
+    public JSONObject POST(String urlString, JSONObject jsonObject) throws IOException {
         StringEntity requestEntity = new StringEntity(
-                jsonString,
+                jsonObject.toString(),
                 ContentType.APPLICATION_JSON);
 
         HttpPost postMethod = new HttpPost(urlString + "extension");
@@ -76,13 +83,13 @@ public class HTTPClient {
         while ((line = rd.readLine()) != null) {
             result.append(line);
         }
+
+        JSONObject responseObject = new JSONObject(result.toString());
+
+        return responseObject;
     }
 
-    public static void main(String[] args) {
-        try {
-            HTTPClient.getInstance().GET("aa");
-        } catch(Exception e) {
-            e.printStackTrace();
-        }
+    public static void main(String[] arg) {
+
     }
 }
