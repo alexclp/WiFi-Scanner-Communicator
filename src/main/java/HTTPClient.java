@@ -5,7 +5,6 @@ import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.ContentType;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.HttpClientBuilder;
-import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.io.BufferedReader;
@@ -87,9 +86,5 @@ public class HTTPClient {
         JSONObject responseObject = new JSONObject(result.toString());
 
         return responseObject;
-    }
-
-    public static void main(String[] arg) {
-
     }
 }

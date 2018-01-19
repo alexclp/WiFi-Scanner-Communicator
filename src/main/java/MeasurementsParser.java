@@ -3,7 +3,7 @@ import java.io.FileReader;
 import java.util.ArrayList;
 
 public class MeasurementsParser {
-    private ArrayList<Measurement> parseFile(String fileName) {
+    public ArrayList<Measurement> parseFile(String fileName) {
         ArrayList<Measurement> measurements = new ArrayList<>();
 
         try {
@@ -39,10 +39,5 @@ public class MeasurementsParser {
             e.printStackTrace();
             return null;
         }
-    }
-
-    public static void main(String[] args) {
-        MeasurementsParser measurementsParser = new MeasurementsParser();
-        System.out.println(measurementsParser.parseFile("src/main/java/output.txt"));
     }
 }
