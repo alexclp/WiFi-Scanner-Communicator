@@ -67,7 +67,7 @@ public class HTTPClient {
                 jsonObject.toString(),
                 ContentType.APPLICATION_JSON);
 
-        HttpPost postMethod = new HttpPost(urlString + "extension");
+        HttpPost postMethod = new HttpPost(urlString);
         postMethod.setEntity(requestEntity);
 
         HttpResponse response = client.execute(postMethod);

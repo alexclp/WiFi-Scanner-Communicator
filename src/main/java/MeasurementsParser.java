@@ -9,9 +9,9 @@ public class MeasurementsParser {
         try {
             BufferedReader reader = new BufferedReader(new FileReader(fileName));
             String line;
-            Measurement measurement = new Measurement(null, 0, null);
 
             while ((line = reader.readLine()) != null) {
+                Measurement measurement = new Measurement(null, 0, null);
                 for (int i = 0; i < 3; ++i) {
                     if (line.contains("Address")) {
                         int startIndex = line.indexOf(":") + 2;
