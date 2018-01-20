@@ -1,3 +1,5 @@
+package com.alexandruclapa;
+
 public class Measurement {
     private String ssid;
     private int signalStrength;
