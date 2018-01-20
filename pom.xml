@@ -31,4 +31,7 @@
             <version>20171018</version>
         </dependency>
     </dependencies>
+    <properties>
+        <exec.mainClass>com.alexandruclapa.Main</exec.mainClass>
+    </properties>
 </project>
