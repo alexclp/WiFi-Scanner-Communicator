@@ -37,7 +37,7 @@ public class DataUploader {
     private int createRoom(String name) throws IOException {
         JSONObject requestJSON = new JSONObject();
         requestJSON.put("name", name);
-        JSONObject responseJSON = HTTPClient.getInstance().POST("http://localhost:8080/rooms", requestJSON);
+        JSONObject responseJSON = HTTPClient.getInstance().POST("http://192.168.0.12:8080/rooms", requestJSON);
         if (responseJSON.has("id")) {
             return responseJSON.getInt("id");
         }
@@ -50,7 +50,7 @@ public class DataUploader {
         requestJSON.put("longitude", longitude);
         requestJSON.put("pressure", pressure);
         requestJSON.put("roomID", roomID);
-        JSONObject responseJSON = HTTPClient.getInstance().POST("http://localhost:8080/locations", requestJSON);
+        JSONObject responseJSON = HTTPClient.getInstance().POST("http://192.168.0.12:8080/locations", requestJSON);
         return responseJSON.has("id");
     }
 
@@ -61,7 +61,7 @@ public class DataUploader {
         requestJSON.put("apID", apID);
         requestJSON.put("signalStrength", measurement.getSignalStrength());
 
-        JSONObject responseJSON = HTTPClient.getInstance().POST("http://localhost:8080/measurements", requestJSON);
+        JSONObject responseJSON = HTTPClient.getInstance().POST("http://192.168.0.12:8080/measurements", requestJSON);
         if (responseJSON.get("id") != null) {
             return true;
         }
@@ -72,7 +72,7 @@ public class DataUploader {
     private String getAccessPointIDFor(Measurement measurement) throws IOException {
         HashMap<String, Object> params = new HashMap<>();
         params.put("macAddress", measurement.getMacAddress());
-        JSONObject jsonObject = HTTPClient.getInstance().GET("http://localhost:8080/accessPoints/address/" + measurement.getMacAddress(), null);
+        JSONObject jsonObject = HTTPClient.getInstance().GET("http://192.168.0.12:8080/accessPoints/address/" + measurement.getMacAddress(), null);
         String apID;
         System.out.println(jsonObject);
         if (jsonObject.has("macAddress")) {
@@ -81,7 +81,7 @@ public class DataUploader {
             JSONObject requestJSON = new JSONObject();
             requestJSON.put("name", measurement.getSsid());
             requestJSON.put("macAddress", measurement.getMacAddress());
-            jsonObject = HTTPClient.getInstance().POST("http://localhost:8080/accessPoints", requestJSON);
+            jsonObject = HTTPClient.getInstance().POST("http://192.168.0.12:8080/accessPoints", requestJSON);
             System.out.println("Request JSON " + requestJSON);
             System.out.println("Response JSON " + jsonObject);
             apID = String.format("%d", jsonObject.getInt("id"));
