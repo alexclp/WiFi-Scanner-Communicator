@@ -7,7 +7,7 @@ import java.util.HashMap;
 
 public class DataUploader {
     private static DataUploader instance = null;
-    final String baseURL = "http://10.75.227.25:8080";
+    final String baseURL = "https://wifi-nav-api.herokuapp.com";
 
     private DataUploader() {
         // Exists only to defeat instantiation.
