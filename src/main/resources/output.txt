@@ -1,156 +1,78 @@
-          Cell 01 - Address: 00:62:EC:FD:EC:A3
-                    Quality=58/70  Signal level=-52 dBm  
-                    ESSID:"PLOCAL"
-          Cell 02 - Address: 00:62:EC:FD:EC:A4
-                    Quality=60/70  Signal level=-50 dBm  
-                    ESSID:"SLaMFT"
-          Cell 03 - Address: 00:62:EC:FD:EC:A2
-                    Quality=60/70  Signal level=-50 dBm  
-                    ESSID:"The Cloud"
-          Cell 04 - Address: 00:62:EC:FD:EC:C4
-                    Quality=50/70  Signal level=-60 dBm  
-                    ESSID:"SLaMFT"
-          Cell 05 - Address: 00:62:EC:FD:EC:C2
-                    Quality=51/70  Signal level=-59 dBm  
-                    ESSID:"The Cloud"
-          Cell 06 - Address: 00:62:EC:FD:EC:C3
-                    Quality=49/70  Signal level=-61 dBm  
-                    ESSID:"PLOCAL"
-          Cell 07 - Address: 00:62:EC:FD:EC:C0
-                    Quality=48/70  Signal level=-62 dBm  
-                    ESSID:"eduroam"
-          Cell 08 - Address: 00:62:EC:FD:EC:A0
-                    Quality=60/70  Signal level=-50 dBm  
-                    ESSID:"eduroam"
-          Cell 09 - Address: 00:62:EC:FD:EC:A1
-                    Quality=59/70  Signal level=-51 dBm  
-                    ESSID:"KINGSWAP"
-          Cell 10 - Address: 00:62:EC:FD:F1:60
-                    Quality=61/70  Signal level=-49 dBm  
-                    ESSID:"eduroam"
-          Cell 11 - Address: 00:62:EC:FD:F1:61
-                    Quality=62/70  Signal level=-48 dBm  
-                    ESSID:"KINGSWAP"
-          Cell 12 - Address: 00:62:EC:FD:F1:62
-                    Quality=59/70  Signal level=-51 dBm  
-                    ESSID:"The Cloud"
-          Cell 13 - Address: 00:62:EC:FD:F1:63
-                    Quality=61/70  Signal level=-49 dBm  
-                    ESSID:"PLOCAL"
-          Cell 14 - Address: 00:62:EC:FD:F1:64
-                    Quality=62/70  Signal level=-48 dBm  
-                    ESSID:"SLaMFT"
-          Cell 15 - Address: 00:42:68:A6:A4:92
-                    Quality=50/70  Signal level=-60 dBm  
-                    ESSID:"The Cloud"
-          Cell 16 - Address: 00:62:EC:FD:EC:50
-                    Quality=46/70  Signal level=-64 dBm  
-                    ESSID:"eduroam"
-          Cell 17 - Address: 00:42:68:A6:A4:94
-                    Quality=49/70  Signal level=-61 dBm  
-                    ESSID:"SLaMFT"
-          Cell 18 - Address: 00:62:EC:FD:EC:51
-                    Quality=48/70  Signal level=-62 dBm  
-                    ESSID:"KINGSWAP"
-          Cell 19 - Address: 00:42:68:A6:A4:93
-                    Quality=51/70  Signal level=-59 dBm  
-                    ESSID:"PLOCAL"
-          Cell 20 - Address: 00:62:EC:FD:EC:52
-                    Quality=47/70  Signal level=-63 dBm  
-                    ESSID:"The Cloud"
-          Cell 21 - Address: 00:62:EC:FD:EC:53
-                    Quality=47/70  Signal level=-63 dBm  
-                    ESSID:"PLOCAL"
-          Cell 22 - Address: 00:62:EC:FD:EC:54
-                    Quality=49/70  Signal level=-61 dBm  
-                    ESSID:"SLaMFT"
-          Cell 23 - Address: 00:62:EC:FD:EF:94
-                    Quality=54/70  Signal level=-56 dBm  
-                    ESSID:"SLaMFT"
-          Cell 24 - Address: 00:62:EC:FD:EF:90
-                    Quality=52/70  Signal level=-58 dBm  
-                    ESSID:"eduroam"
-          Cell 25 - Address: 00:62:EC:FD:EF:91
-                    Quality=52/70  Signal level=-58 dBm  
-                    ESSID:"KINGSWAP"
-          Cell 26 - Address: 00:62:EC:FD:EF:92
-                    Quality=51/70  Signal level=-59 dBm  
-                    ESSID:"The Cloud"
-          Cell 27 - Address: 00:62:EC:FD:EF:93
-                    Quality=53/70  Signal level=-57 dBm  
-                    ESSID:"PLOCAL"
-          Cell 28 - Address: 00:42:68:A6:A6:70
-                    Quality=54/70  Signal level=-56 dBm  
-                    ESSID:"eduroam"
-          Cell 29 - Address: 00:42:68:A6:A6:71
-                    Quality=54/70  Signal level=-56 dBm  
-                    ESSID:"KINGSWAP"
-          Cell 30 - Address: 00:42:68:A6:A6:72
-                    Quality=51/70  Signal level=-59 dBm  
-                    ESSID:"The Cloud"
-          Cell 31 - Address: 00:42:68:A6:A6:73
-                    Quality=53/70  Signal level=-57 dBm  
-                    ESSID:"PLOCAL"
-          Cell 32 - Address: 00:42:68:A6:A6:74
-                    Quality=54/70  Signal level=-56 dBm  
-                    ESSID:"SLaMFT"
-          Cell 33 - Address: 00:62:EC:FD:E9:10
-                    Quality=35/70  Signal level=-75 dBm  
-                    ESSID:"eduroam"
-          Cell 34 - Address: 00:62:EC:FD:E9:11
-                    Quality=38/70  Signal level=-72 dBm  
-                    ESSID:"KINGSWAP"
-          Cell 35 - Address: 00:62:EC:FD:E9:12
-                    Quality=34/70  Signal level=-76 dBm  
-                    ESSID:"The Cloud"
-          Cell 36 - Address: 00:62:EC:FD:E9:14
-                    Quality=36/70  Signal level=-74 dBm  
-                    ESSID:"SLaMFT"
-          Cell 37 - Address: 00:62:EC:FD:ED:70
-                    Quality=47/70  Signal level=-63 dBm  
-                    ESSID:"eduroam"
-          Cell 38 - Address: 00:62:EC:FD:ED:71
-                    Quality=48/70  Signal level=-62 dBm  
-                    ESSID:"KINGSWAP"
-          Cell 39 - Address: 00:62:EC:FD:ED:72
-                    Quality=46/70  Signal level=-64 dBm  
-                    ESSID:"The Cloud"
-          Cell 40 - Address: 00:62:EC:FD:E9:13
-                    Quality=36/70  Signal level=-74 dBm  
-                    ESSID:"PLOCAL"
-          Cell 41 - Address: 00:62:EC:FD:ED:73
-                    Quality=47/70  Signal level=-63 dBm  
-                    ESSID:"PLOCAL"
-          Cell 42 - Address: 00:62:EC:FD:ED:74
-                    Quality=48/70  Signal level=-62 dBm  
-                    ESSID:"SLaMFT"
-          Cell 43 - Address: 00:62:EC:FD:EC:C1
-                    Quality=46/70  Signal level=-64 dBm  
-                    ESSID:"KINGSWAP"
-          Cell 44 - Address: 00:62:EC:FD:EB:13
-                    Quality=46/70  Signal level=-64 dBm  
-                    ESSID:"PLOCAL"
-          Cell 45 - Address: 00:62:EC:FD:EB:14
-                    Quality=44/70  Signal level=-66 dBm  
-                    ESSID:"SLaMFT"
-          Cell 46 - Address: 00:42:68:A6:A4:90
-                    Quality=52/70  Signal level=-58 dBm  
-                    ESSID:"eduroam"
-          Cell 47 - Address: 00:42:68:A6:A4:91
-                    Quality=53/70  Signal level=-57 dBm  
-                    ESSID:"KINGSWAP"
-          Cell 48 - Address: 58:AC:78:F1:86:C0
-                    Quality=33/70  Signal level=-77 dBm  
-                    ESSID:"eduroam"
-          Cell 49 - Address: 00:62:EC:FD:EB:10
-                    Quality=45/70  Signal level=-65 dBm  
-                    ESSID:"eduroam"
-          Cell 50 - Address: 00:62:EC:FD:EB:11
-                    Quality=48/70  Signal level=-62 dBm  
-                    ESSID:"KINGSWAP"
-          Cell 51 - Address: 00:62:EC:FD:EB:12
-                    Quality=43/70  Signal level=-67 dBm  
-                    ESSID:"The Cloud"
-          Cell 52 - Address: 00:62:EC:FD:EE:84
-                    Quality=25/70  Signal level=-85 dBm  
-                    ESSID:"SLaMFT"
+          Cell 01 - Address: 44:6E:E5:66:82:D8
+                    Quality=50/70  Signal level=-60 dBm
+                    ESSID:"TALKTALK6682D0"
+          Cell 02 - Address: 40:0D:10:5B:39:31
+                    Quality=47/70  Signal level=-63 dBm
+                    ESSID:"VM7074897"
+          Cell 03 - Address: FA:8F:CA:6B:B0:7E
+                    Quality=25/70  Signal level=-85 dBm
+                    ESSID:"Blazin.b"
+          Cell 04 - Address: C0:05:C2:B3:4C:79
+                    Quality=50/70  Signal level=-60 dBm
+                    ESSID:"VM5198252"
+          Cell 05 - Address: C0:05:C2:52:B2:79
+                    Quality=43/70  Signal level=-67 dBm
+                    ESSID:"TheGhostHasEatenMyBrainz"
+          Cell 06 - Address: D2:05:C2:52:B2:79
+                    Quality=43/70  Signal level=-67 dBm
+                    ESSID:"Virgin Media"
+          Cell 07 - Address: C0:05:C2:D1:1F:81
+                    Quality=39/70  Signal level=-71 dBm
+                    ESSID:"VM1717941"
+          Cell 08 - Address: 5A:8D:36:01:7D:C0
+                    Quality=36/70  Signal level=-74 dBm
+                    ESSID:"BTWifi-with-FON"
+          Cell 09 - Address: D2:05:C2:D1:1F:81
+                    Quality=39/70  Signal level=-71 dBm
+                    ESSID:"Virgin Media"
+          Cell 10 - Address: C0:05:C2:0C:2F:81
+                    Quality=27/70  Signal level=-83 dBm
+                    ESSID:"VM1520675"
+          Cell 11 - Address: 18:1E:78:2C:43:71
+                    Quality=17/70  Signal level=-93 dBm
+                    ESSID:"BTWifi-with-FON"
+          Cell 12 - Address: 5A:8D:36:01:7D:C1
+                    Quality=34/70  Signal level=-76 dBm
+                    ESSID:"BTWifi-X"
+          Cell 13 - Address: 48:D3:43:0D:7F:99
+                    Quality=27/70  Signal level=-83 dBm
+                    ESSID:"VM8031920"
+          Cell 14 - Address: C0:FF:D4:22:3F:78
+                    Quality=23/70  Signal level=-87 dBm
+                    ESSID:"sunny2012"
+          Cell 15 - Address: C0:FF:D4:22:3F:7B
+                    Quality=28/70  Signal level=-82 dBm
+                    ESSID:"Virgin Media"
+          Cell 16 - Address: D2:05:C2:8D:4C:E1
+                    Quality=30/70  Signal level=-80 dBm
+                    ESSID:"Virgin Media"
+          Cell 17 - Address: 40:0D:10:43:0E:49
+                    Quality=32/70  Signal level=-78 dBm
+                    ESSID:"VM1137220"
+          Cell 18 - Address: C0:05:C2:8D:4C:E1
+                    Quality=34/70  Signal level=-76 dBm
+                    ESSID:"VM1545454"
+          Cell 19 - Address: 26:7F:20:A8:04:D1
+                    Quality=20/70  Signal level=-90 dBm
+                    ESSID:"BTWifi-with-FON"
+          Cell 20 - Address: 26:7F:20:A8:04:D2
+                    Quality=21/70  Signal level=-89 dBm
+                    ESSID:"BTWifi-X"
+          Cell 21 - Address: 5A:D3:43:0D:7F:99
+                    Quality=29/70  Signal level=-81 dBm
+                    ESSID:"Virgin Media"
+          Cell 22 - Address: D2:05:C2:77:B4:E1
+                    Quality=24/70  Signal level=-86 dBm
+                    ESSID:"Virgin Media"
+          Cell 23 - Address: 40:0D:10:97:90:29
+                    Quality=34/70  Signal level=-76 dBm
+                    ESSID:"VM6489912"
+          Cell 24 - Address: 20:47:ED:35:F7:3E
+                    Quality=34/70  Signal level=-76 dBm
+                    ESSID:"SKY79EFB"
+          Cell 25 - Address: 52:0D:10:5B:39:31
+                    Quality=36/70  Signal level=-74 dBm
+                    ESSID:"Virgin Media"
+          Cell 26 - Address: 64:A5:C3:70:48:90
+                    Quality=31/70  Signal level=-79 dBm
+                    ESSID:"Vassianna's Wi-Fi Network"

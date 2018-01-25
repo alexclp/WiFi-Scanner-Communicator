@@ -15,6 +15,11 @@ public class MeasurementsParser {
             while ((line = reader.readLine()) != null) {
                 Measurement measurement = new Measurement(null, 0, null);
                 for (int i = 0; i < 3; ++i) {
+
+                    if (line == null) {
+                        break;
+                    }
+
                     if (line.contains("Address")) {
                         int startIndex = line.indexOf(":") + 2;
                         int endIndex = line.lastIndexOf(":") + 3;
@@ -31,7 +36,9 @@ public class MeasurementsParser {
                     line = reader.readLine();
                 }
 
-                measurements.add(measurement);
+                if (measurement.getMacAddress() != null && measurement.getSsid() != null) {
+                    measurements.add(measurement);
+                }
             }
 
             reader.close();
