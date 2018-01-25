@@ -3,6 +3,7 @@ package com.alexandruclapa;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
+import org.apache.http.client.methods.HttpPatch;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.ContentType;
 import org.apache.http.entity.StringEntity;
@@ -73,6 +74,32 @@ public class HTTPClient {
         postMethod.setEntity(requestEntity);
 
         HttpResponse response = client.execute(postMethod);
+        System.out.println("Response Code : "
+                + response.getStatusLine().getStatusCode());
+
+        BufferedReader rd = new BufferedReader(
+                new InputStreamReader(response.getEntity().getContent()));
+
+        StringBuffer result = new StringBuffer();
+        String line;
+        while ((line = rd.readLine()) != null) {
+            result.append(line);
+        }
+
+        JSONObject responseObject = new JSONObject(result.toString());
+
+        return responseObject;
+    }
+
+    public JSONObject PATCH(String urlString, JSONObject jsonObject) throws IOException {
+        StringEntity requestEntity = new StringEntity(
+                jsonObject.toString(),
+                ContentType.APPLICATION_JSON);
+
+        HttpPatch patchMethod = new HttpPatch(urlString);
+        patchMethod.setEntity(requestEntity);
+
+        HttpResponse response = client.execute(patchMethod);
         System.out.println("Response Code : "
                 + response.getStatusLine().getStatusCode());
 

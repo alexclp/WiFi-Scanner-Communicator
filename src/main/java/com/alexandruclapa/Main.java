@@ -1,20 +1,46 @@
 package com.alexandruclapa;
 
-import com.alexandruclapa.DataUploader;
+import org.json.JSONObject;
 
 import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] arg) {
-        DataUploader.getInstance().createTempDataOnServer();
+        // First check if scan flag is true
 
-        MeasurementsParser measurementsParser = new MeasurementsParser();
-        ArrayList<Measurement> measurementArrayList = measurementsParser.parseFile("src/main/resources/output.txt");
-        System.out.println(measurementArrayList);
+        boolean shouldScan = false;
+        try {
+            JSONObject response = HTTPClient.getInstance().GET("https://scanner-on-off.herokuapp.com/scanSwitch/1", null);
+            if (response.has("shouldScan")) {
+                shouldScan = response.getBoolean("shouldScan");
+            }
+        } catch(Exception e) {
+            e.printStackTrace();
+        }
 
-        for (Measurement measurement : measurementArrayList) {
+        // If it's true then commence scanning
+
+        if (shouldScan) {
+            DataUploader.getInstance().createTempDataOnServer();
+
+            MeasurementsParser measurementsParser = new MeasurementsParser();
+            ArrayList<Measurement> measurementArrayList = measurementsParser.parseFile("src/main/resources/output.txt");
+            System.out.println(measurementArrayList);
+
+            for (Measurement measurement : measurementArrayList) {
+                try {
+                    DataUploader.getInstance().uploadMeasurementFor(1, measurement);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+
+            // And set it to false at the end
+
             try {
-                DataUploader.getInstance().uploadMeasurementFor(1, measurement);
+                JSONObject requestJSON = new JSONObject();
+                requestJSON.put("shouldScan", false);
+                HTTPClient.getInstance().PATCH("https://scanner-on-off.herokuapp.com/scanSwitch/1", requestJSON);
             } catch (Exception e) {
                 e.printStackTrace();
             }
