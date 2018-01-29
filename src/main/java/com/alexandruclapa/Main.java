@@ -24,7 +24,7 @@ public class Main {
             DataUploader.getInstance().createTempDataOnServer();
 
             MeasurementsParser measurementsParser = new MeasurementsParser();
-            ArrayList<Measurement> measurementArrayList = measurementsParser.parseFile("src/main/resources/output.txt");
+            ArrayList<Measurement> measurementArrayList = measurementsParser.parseFile("/home/pi/Work/Individual Project/WiFi-Scanner-Communicator/src/main/resources/output.txt");
             System.out.println(measurementArrayList);
 
             for (Measurement measurement : measurementArrayList) {
