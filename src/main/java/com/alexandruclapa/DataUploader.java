@@ -70,6 +70,21 @@ public class DataUploader {
         return false;
     }
 
+    public boolean uploadTempData(Measurement measurement) throws IOException {
+        String url = "https://scanner-on-off.herokuapp.com";
+        JSONObject requestJSON = new JSONObject();
+        requestJSON.put("signalStrength", measurement.getSignalStrength());
+        requestJSON.put("name", measurement.getSsid());
+        requestJSON.put("macAddress", measurement.getMacAddress());
+
+        JSONObject responseJSON = HTTPClient.getInstance().POST(url + "/measurements", requestJSON);
+        if (responseJSON.get("id") != null) {
+            return true;
+        }
+
+        return false;
+    }
+
     private String getAccessPointIDFor(Measurement measurement) throws IOException {
         HashMap<String, Object> params = new HashMap<>();
         params.put("macAddress", measurement.getMacAddress());
